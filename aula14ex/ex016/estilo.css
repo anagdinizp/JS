@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+body {
+    background-color: rgb(193, 127, 255);
+    font: normal 15pt Arial;
+    color: white;
+    
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
+}
+
+.cont {
+    cursor: pointer;
+}
+
+.botao {
+    display:flex;
+    justify-content:center;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}

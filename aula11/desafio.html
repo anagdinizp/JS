@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do País</title>
+</head>
+<body>
+    <h1>Sistema de Acolhimento</h1>
+
+    País atual: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id='res'>
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txtp = window.document.getElementById('txtpais')
+            var res = window.document.querySelector('div#res')
+            res.innerText = `Atualmente você está em ${txtp}`
+            if (txtp == 'Brasil') {
+                res.innerText += 'Você é brasileiro!'
+                res.innerText += 'Bem vindo de volta!'
+            
+            } else {
+                    res.innerText += 'Você é estrangeiro!'
+                    res.innerText += 'Seja bem vindo!'
+                }
+            res.innerText += 'Até mais'
+        }
+    </script>
+
+</body>
+</html>
